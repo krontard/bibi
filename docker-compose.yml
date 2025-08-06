@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  telegpt:
+    build: .
+    container_name: telegpt_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=sqlite:///app/data/telegpt.db
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - telegpt_network
+
+networks:
+  telegpt_network:
+    driver: bridge
