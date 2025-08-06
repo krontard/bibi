@@ -19,8 +19,8 @@ Telegram бот для общения с различными AI моделям�
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/ваш-username/TeleGPT.git
-cd TeleGPT
+git clone https://github.com/ваш-username/bibi.git
+cd bibi
 ```
 
 ### 2. Создание виртуального окружения
